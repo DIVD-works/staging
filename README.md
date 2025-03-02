@@ -34,3 +34,15 @@ This is a testing deployment for the HUGO cms.
         git push -f origin gh-pages
         cd ..
 ``
+
+## Automate future deployments
+
+After making changes to the local website:
+
+``
+        hugo
+        cd public
+        git add .
+        git commit -m "Update staging.divd.works"
+        git push origin gh-pages
+``
