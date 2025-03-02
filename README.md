@@ -8,8 +8,9 @@ This is a testing deployment for the HUGO cms.
 2. sudo snap install hugo
 3. hugo new site staging
 4. cd staging
-5. git submodule add https://github.com/foxihd/hugo-brewm themes/hugo-brewm
-6. hugo server -D
+5. git init
+6. git submodule add https://github.com/foxihd/hugo-brewm themes/hugo-brewm
+7. hugo server -D
 
 ## Latest version (local copy of staging.divd.works)
 
