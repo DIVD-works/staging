@@ -5,7 +5,7 @@
 
 # Dist
 node_modules
-dist/
+#dist/
 
 # Profile
 .rspack-profile-*/
@@ -14,3 +14,4 @@ dist/
 .vscode/*
 !.vscode/extensions.json
 .idea
+.vercel
