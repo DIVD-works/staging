@@ -4,13 +4,17 @@
     import Header from "$lib/Header.svelte";
     import { home_cards, technology_icons } from "$lib/types";
     import Icon from "@iconify/svelte";
+    import PoweredByPurpose from "$lib/assets/powered-by-purpose.png";
+    import Banner from "$lib/assets/banner.jpg";
 </script>
 
 <Header />
 <main>
     <!-- Banner section -->
     <section
-        class="banner w-full h-[calc(100vh-5rem)] flex justify-start md:justify-center px-3 lg:px-0"
+        class="w-full h-[calc(100vh-5rem)] flex justify-start md:justify-center px-3 lg:px-0"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.9)), url({Banner}); bg-repeat: no-repeat;
+        background-size: cover; z-index: 1;"
     >
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8 md:gap-20"
@@ -136,7 +140,7 @@
         >
             <div class="w-full flex flex-col items-center">
                 <img
-                    src="src/lib/assets/powered-by-purpose.png"
+                    src={PoweredByPurpose}
                     alt="Powered by Purpose"
                     class="hue-rotate-230 h-100 sm:h-130 md:h-160"
                     fetchpriority="high"

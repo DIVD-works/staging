@@ -20,7 +20,9 @@
     transition:slide
 >
     {#if menu_open}
-        <article class="w-full h-20 flex items-center justify-between px-5">
+        <article
+            class="w-full h-16 sm:h-20 flex items-center justify-between px-3 md:px-5"
+        >
             <Works />
             <div>
                 <User />

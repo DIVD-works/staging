@@ -1,6 +1,9 @@
 <script lang="ts">
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
+
+    import Sustainability from "$lib/assets/growth/sustainability.jpg";
+    import Investors from "$lib/assets/growth/investors.jpg";
 </script>
 
 <Header />
@@ -36,7 +39,7 @@
                 hover:ease-in"
             >
                 <img
-                    src="src/lib/assets/sustainability.jpg"
+                    src={Sustainability}
                     alt="Sustainability"
                     fetchpriority="high"
                 />
@@ -83,11 +86,7 @@
                 class="w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out
                 hover:ease-in"
             >
-                <img
-                    src="src/lib/assets/investors.jpg"
-                    alt="Investors"
-                    fetchpriority="high"
-                />
+                <img src={Investors} alt="Investors" fetchpriority="high" />
             </div>
             <div class="w-full flex flex-col items-center lg:items-start">
                 <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">

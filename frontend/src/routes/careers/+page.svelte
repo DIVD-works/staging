@@ -2,6 +2,8 @@
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
 
+    import Careers from "$lib/assets/careers/careers.jpg";
+
     const job_listings: string[] = [
         "Senior Vice President, Business Operations",
         "Senior Vice President, Chief Legal Officer",
@@ -26,11 +28,7 @@
                 class="w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out
                 hover:ease-in"
             >
-                <img
-                    src="src/lib/assets/careers.jpg"
-                    alt="Careers"
-                    fetchpriority="high"
-                />
+                <img src={Careers} alt="Careers" fetchpriority="high" />
             </div>
             <div class="w-full flex flex-col items-start">
                 <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">

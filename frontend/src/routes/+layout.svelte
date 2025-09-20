@@ -15,14 +15,3 @@
 </svelte:head>
 
 {@render children?.()}
-
-<style>
-    :global(.banner) {
-        background:
-            linear-gradient(rgba(0, 0, 0, 0.9)),
-            url("src/lib/assets/banner.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 1;
-    }
-</style>

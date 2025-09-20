@@ -2,6 +2,10 @@
     import { goto } from "$app/navigation";
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
+    import Workmethods from "$lib/assets/workmethods/workmethods.jpg";
+    import ConnectingAmbition from "$lib/assets/workmethods/connecting-ambition.webp";
+    import WhatCanYouDo from "$lib/assets/workmethods/what-can-you-do.png";
+    import JoinUs from "$lib/assets/workmethods/join-us.png";
 </script>
 
 <Header />
@@ -17,11 +21,7 @@
                 class="w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out
                 hover:ease-in"
             >
-                <img
-                    src="src/lib/assets/workmethods.jpg"
-                    alt="Workmethods"
-                    fetchpriority="high"
-                />
+                <img src={Workmethods} alt="Workmethods" fetchpriority="high" />
             </div>
             <div class="w-full flex flex-col items-start">
                 <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
@@ -118,7 +118,7 @@
                 hover:ease-in"
             >
                 <img
-                    src="src/lib/assets/connecting-ambition.webp"
+                    src={ConnectingAmbition}
                     alt="Connecting Ambition"
                     fetchpriority="high"
                 />
@@ -210,7 +210,7 @@
                 hover:ease-in"
             >
                 <img
-                    src="src/lib/assets/what-can-you-do.png"
+                    src={WhatCanYouDo}
                     alt="What can you do"
                     fetchpriority="high"
                 />
@@ -222,7 +222,7 @@
         class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-slate-50 dark:bg-slate-950"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
         >
             <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
                 Why we stand out
@@ -251,7 +251,7 @@
                 hover:ease-in"
             >
                 <img
-                    src="src/lib/assets/join-us.png"
+                    src={JoinUs}
                     alt="Join us"
                     class="hue-rotate-230"
                     fetchpriority="high"
