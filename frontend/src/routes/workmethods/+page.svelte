@@ -25,7 +25,7 @@
             </div>
             <div class="w-full flex flex-col items-start">
                 <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
-                    Workmethods
+                    Work methods
                 </h1>
                 <p
                     class="text-gray-700 dark:text-gray-300 mt-8 mb-4 text-base sm:text-lg"
@@ -53,7 +53,7 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                 Bridging the Gap
             </h2>
             <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
@@ -86,7 +86,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
         >
             <div class="w-full flex flex-col items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+                <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                     Connecting Ambition
                 </h2>
                 <p
@@ -132,11 +132,11 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                 What we offer
             </h2>
             <ol
-                class="text-gray-700 dark:text-gray-300 text-base sm:text-lg"
+                class="text-gray-700 dark:text-gray-300 text-base sm:text-lg pl-4"
                 style="list-style-type:square"
             >
                 <p
@@ -170,7 +170,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
         >
             <div class="w-full flex flex-col items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+                <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                     What can you do?
                 </h2>
                 <ol
@@ -224,7 +224,7 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                 Why we stand out
             </h2>
             <p
@@ -259,7 +259,7 @@
             </div>
             <div class="w-full flex flex-col items-start">
                 <h2
-                    class="text-black dark:text-white text-5xl md:text-6xl font-semibold"
+                    class="text-black dark:text-white text-4xl md:text-5xl font-semibold"
                 >
                     Join us
                 </h2>

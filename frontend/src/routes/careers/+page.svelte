@@ -5,13 +5,13 @@
     import Careers from "$lib/assets/careers/careers.jpg";
 
     const job_listings: string[] = [
-        "Senior Vice President, Business Operations",
-        "Senior Vice President, Chief Legal Officer",
-        "Senior Vice President, Chief People Officer",
-        "Senior Vice President, Communications & Public Policy",
-        "Senior Vice President, Safety & Core Services",
-        "Senior Vice President, Sales",
-        "Senior Vice President, Support",
+        "Business Operations",
+        "Chief Legal Officer",
+        "Chief People Officer",
+        "Communications & Public Policy",
+        "Safety & Core Services",
+        "Sales",
+        "Support",
     ];
 </script>
 
@@ -55,7 +55,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
         >
             <div class="w-full flex flex-col items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+                <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                     Career opportunities
                 </h2>
                 <p
@@ -68,7 +68,9 @@
                     class="text-gray-700 dark:text-gray-300 text-base sm:text-lg
                     whitespace-pre underline"
                 >
-                    {job_listings.map((value: string) => value).join("\n")}
+                    {job_listings
+                        .map((value: string) => "SVP, " + value)
+                        .join("\n")}
                 </a>
             </div>
         </article>

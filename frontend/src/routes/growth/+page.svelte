@@ -16,12 +16,12 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
         >
-            <div class="w-full flex flex-col items-center lg:items-start">
+            <div class="w-full flex flex-col items-start">
                 <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                     Growth
                 </h1>
                 <p
-                    class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg text-center lg:text-left"
+                    class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg"
                 >
                     At DIVD.works, we’re dedicated to shaping the future by
                     empowering individuals to build meaningful careers, pursue
@@ -52,13 +52,13 @@
         dark:bg-slate-950"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center lg:items-start flex-col"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                 Sustainability
             </h2>
             <p
-                class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg text-center lg:text-left"
+                class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg"
             >
                 At DIVD.works, we are dedicated to empowering individuals with
                 purposeful careers that make a positive impact on society and
@@ -88,12 +88,12 @@
             >
                 <img src={Investors} alt="Investors" fetchpriority="high" />
             </div>
-            <div class="w-full flex flex-col items-center lg:items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+            <div class="w-full flex flex-col items-start">
+                <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                     Investors
                 </h2>
                 <p
-                    class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg text-center lg:text-left"
+                    class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg"
                 >
                     At DIVD.works, we are committed to driving innovation,
                     sustainability, and social impact. Here, we provide insights

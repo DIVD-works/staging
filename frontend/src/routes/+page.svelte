@@ -2,10 +2,86 @@
     import { goto } from "$app/navigation";
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
-    import { home_cards, technology_icons } from "$lib/types";
     import Icon from "@iconify/svelte";
     import PoweredByPurpose from "$lib/assets/powered-by-purpose.png";
     import Banner from "$lib/assets/banner.jpg";
+    import type { Cards, TechnologyIcons } from "$lib/types";
+
+    const home_cards: Cards<string>[] = [
+        {
+            title: "Students",
+            description: "Students gain Real-World experience",
+            icon: "mdi:account-student",
+        },
+        {
+            title: "Companies",
+            description: "Companies discover motivated talent",
+            icon: "mdi:company",
+        },
+        {
+            title: "Education",
+            description: "Education prepares students for the future",
+            icon: "mdi:education-outline",
+        },
+        {
+            title: "Communities",
+            description: "Communities connect, collaborate and innovate",
+            icon: "mdi:connect-without-contact",
+        },
+        {
+            title: "Workset",
+            description: "Workset empowers mentorship and growth",
+            icon: "mdi:computer",
+        },
+        {
+            title: "Freedom",
+            description: "Freedom embarks a journey of lifelong learning",
+            icon: "mdi:bird",
+        },
+    ];
+
+    const technology_icons: TechnologyIcons<string>[] = [
+        {
+            icon: "tabler:brand-svelte",
+            style: "text-orange-600",
+        },
+        {
+            icon: "mdi:language-typescript",
+            style: "text-blue-500",
+        },
+        {
+            icon: "mdi:tailwind",
+            style: "text-sky-400",
+        },
+        {
+            icon: "mdi:language-rust",
+            style: "text-orange-500",
+        },
+        {
+            icon: "mdi:database",
+            style: "text-yellow-400",
+        },
+        {
+            icon: "mdi:language-python",
+            style: "text-green-500",
+        },
+        {
+            icon: "tabler:brand-flutter",
+            style: "text-blue-300",
+        },
+        {
+            icon: "mdi:github",
+            style: "text-black dark:text-white",
+        },
+        {
+            icon: "mdi:linux",
+            style: "text-black dark:text-white",
+        },
+        {
+            icon: "mdi:google",
+            style: "text-red-500",
+        },
+    ];
 </script>
 
 <Header />
@@ -17,7 +93,8 @@
         background-size: cover; z-index: 1;"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8 md:gap-20"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-4 sm:gap-8
+            md:gap-20"
         >
             <h1
                 class="text-purple-500 text-3xl sm:text-5xl md:text-6xl font-extrabold"
@@ -63,11 +140,9 @@
         dark:bg-black"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
         >
-            <h2
-                class="text-purple-500 text-4xl sm:text-5xl md:text-6xl font-semibold"
-            >
+            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                 Our Definement
             </h2>
             <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
@@ -82,8 +157,9 @@
                 click the button below for more information about how work.
             </p>
             <button
-                class="bg-purple-600 w-full sm:w-50 h-12 rounded-2xl cursor-pointer text-black dark:text-white
-                text-xl font-semibold hover:bg-purple-700 duration-200 ease-out hover:ease-in"
+                class="bg-purple-600 w-full sm:w-50 h-12 rounded-2xl cursor-pointer text-black
+                dark:text-white text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
+                hover:ease-in"
                 on:click={(): Promise<void> => goto("/workmethods")}
             >
                 {"Learn more!".toUpperCase()}
@@ -99,31 +175,31 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-black dark:text-white text-4xl sm:text-5xl md:text-6xl font-semibold"
+                class="text-black dark:text-white text-4xl md:text-5xl font-semibold"
             >
                 Why choose us?
             </h2>
             <div
                 class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"
             >
-                {#each home_cards as card}
+                {#each home_cards as { title, description, icon }, _}
                     <article
                         class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center"
                     >
                         <h3
                             class="text-purple-500 text-3xl sm:text-4xl font-medium"
                         >
-                            {card.title}
+                            {title}
                         </h3>
                         <p
                             class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-center"
                         >
-                            {card.slogan}
+                            {description}
                         </p>
                         <Icon
-                            icon={card.icon}
-                            class="w-14 sm:w-16 h-14 sm:h-16 text-black dark:text-white scale-100 hover:scale-110
-                            duration-200 ease-out hover:ease-in"
+                            {icon}
+                            class="w-14 sm:w-16 h-14 sm:h-16 text-black dark:text-white scale-100
+                            hover:scale-110 duration-200 ease-out hover:ease-in"
                         />
                     </article>
                 {/each}
@@ -146,14 +222,14 @@
                     fetchpriority="high"
                 />
             </div>
-            <div class="w-full flex flex-col items-center md:items-start">
+            <div class="w-full flex flex-col items-start">
                 <h2
-                    class="text-black dark:text-white text-5xl md:text-6xl font-semibold"
+                    class="text-black dark:text-white text-4xl md:text-5xl font-semibold"
                 >
                     Technlogy
                 </h2>
                 <p
-                    class="text-gray-700 dark:text-gray-300 my-8 text-base sm:text-lg text-center md:text-left"
+                    class="text-gray-700 dark:text-gray-300 my-8 text-base sm:text-lg"
                 >
                     We use the latest technologies and tools with we experience
                     in. To stay up to date with the latest trends and really be
@@ -162,14 +238,14 @@
                     things.
                 </p>
                 <article
-                    class="w-full grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4
-                    sm:gap-6"
+                    class="w-full grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 lg:grid-cols-4
+                    xl:grid-cols-5 gap-4 sm:gap-6"
                 >
-                    {#each technology_icons as stack}
+                    {#each technology_icons as { icon, style }, _}
                         <Icon
-                            icon={stack.icon}
-                            class="{stack.style} w-16 sm:w-20 h-16 sm:h-20 bg-gray-200 dark:bg-gray-800 rounded-xl p-2 scale-100
-                            hover:scale-110 duration-200 ease-out hover:ease-in"
+                            {icon}
+                            class="{style} w-16 sm:w-20 h-16 sm:h-20 bg-gray-200 dark:bg-gray-800
+                            rounded-xl p-2 scale-100 hover:scale-110 duration-200 ease-out hover:ease-in"
                         />
                     {/each}
                 </article>
@@ -182,14 +258,15 @@
         dark:bg-slate-950"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col md:flex-row gap-8 md:gap-12"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col md:flex-row gap-8
+            md:gap-12"
         >
-            <div class="w-full flex flex-col items-center md:items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+            <div class="w-full flex flex-col items-start">
+                <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                     Newsletter
                 </h2>
                 <p
-                    class="text-gray-700 dark:text-gray-300 my-8 text-lg sm:text-xl text-center md:text-left"
+                    class="text-gray-700 dark:text-gray-300 my-8 text-lg sm:text-xl"
                 >
                     Welcome to the DIVD.works newsletter! Do you want to stay up
                     to date of the latest updates, new projects, inspiring
@@ -199,8 +276,8 @@
                 <a
                     href="https://newsroom.divd.works/"
                     class="bg-black dark:bg-white w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-white
-                    dark:text-black text-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 duration-200 ease-out
-                    hover:ease-in flex justify-center items-center"
+                    dark:text-black text-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-200
+                    duration-200 ease-out hover:ease-in flex justify-center items-center"
                     target="_blank"
                 >
                     {"To newsletter!".toUpperCase()}
@@ -232,14 +309,14 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-black dark:text-white text-3xl sm:text-5xl md:text-5xl font-semibold"
+                class="text-black dark:text-white text-4xl md:text-5xl font-semibold"
             >
                 Looking for opportunities?
             </h2>
             <a
                 href="https://discord.gg/uRTHZm9GgT"
-                class="bg-purple-600 w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-black dark:text-white
-                text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
+                class="bg-purple-600 w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-black
+                dark:text-white text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
                 hover:ease-in flex justify-center items-center"
                 target="_blank"
             >
