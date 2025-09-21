@@ -187,7 +187,7 @@
                         class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center"
                     >
                         <h3
-                            class="text-purple-500 text-3xl sm:text-4xl font-medium"
+                            class="text-purple-500 text-3xl sm:text-4xl font-medium text-center"
                         >
                             {title}
                         </h3>
@@ -196,11 +196,13 @@
                         >
                             {description}
                         </p>
-                        <Icon
-                            {icon}
-                            class="w-14 sm:w-16 h-14 sm:h-16 text-black dark:text-white scale-100
-                            hover:scale-110 duration-200 ease-out hover:ease-in"
-                        />
+                        <div class="w-full flex justify-center">
+                            <Icon
+                                {icon}
+                                class="w-14 sm:w-16 h-14 sm:h-16 text-black dark:text-white scale-100
+                                hover:scale-110 duration-200 ease-out hover:ease-in"
+                            />
+                        </div>
                     </article>
                 {/each}
             </div>

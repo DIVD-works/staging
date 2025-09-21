@@ -64,7 +64,7 @@
                 {#each projects as { location, image, title, description, tags }, _}
                     <article
                         class="col-span-12 w-full grid grid-cols-12 gap-4 sm:gap-8 place-items-center border
-                        border-black dark:border-white p-6 rounded-2xl"
+                        sm:border-black dark:sm:border-white p-0 sm:p-6 rounded-2xl"
                     >
                         <a
                             href={location}
@@ -76,8 +76,7 @@
 
                         <div class="col-span-12 xl:col-span-8">
                             <h2
-                                class="text-purple-500 text-3xl md:text-4xl font-semibold text-center
-                                xl:text-left"
+                                class="text-purple-500 text-3xl md:text-4xl font-semibold"
                             >
                                 {title}
                             </h2>

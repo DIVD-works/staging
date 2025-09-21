@@ -71,11 +71,13 @@
                     <article
                         class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center"
                     >
-                        <Icon
-                            {icon}
-                            class="w-20 sm:w-24 h-20 sm:h-24 text-black dark:text-white scale-100 hover:scale-110
-                            duration-200 ease-out hover:ease-in"
-                        />
+                        <div class="w-full flex justify-center">
+                            <Icon
+                                {icon}
+                                class="w-20 sm:w-24 h-20 sm:h-24 text-black dark:text-white scale-100
+                                hover:scale-110 duration-200 ease-out hover:ease-in"
+                            />
+                        </div>
                         <h3
                             class="text-purple-500 text-3xl sm:text-4xl font-medium my-3 text-center"
                         >

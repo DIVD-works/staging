@@ -72,7 +72,7 @@
                         (faq_index = faq_index == index ? null : index)}
                 >
                     <h2
-                        class="text-purple-500 text-xl sm:text-2xl md:text-3xl font-semibold"
+                        class="text-purple-500 text-base sm:text-2xl font-semibold"
                     >
                         {index + 1}. {title}
                     </h2>
