@@ -18,8 +18,10 @@ const service_cards: Cards<string>[] = [
   },
 ];
 
-export const load = () => {
+export const load = ({ data }: unknown) => {
   return {
     service_cards: service_cards,
+    title: data.title,
+    description: data.description,
   };
 };

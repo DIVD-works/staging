@@ -3,13 +3,13 @@
 h1,
 h2,
 h3 {
-    @apply font-serif;
+    font-family: "Arial Rounded MT Bold", sans-serif;
 }
 
 p,
 a,
 button {
-    @apply font-mono;
+    font-family: "system-ui", monospace;
 }
 
 html {

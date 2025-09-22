@@ -76,8 +76,10 @@ const team: Team<string>[] = [
   },
 ];
 
-export const load = () => {
+export const load = ({ data }: unknown) => {
   return {
     team: team,
+    title: data.title,
+    description: data.description,
   };
 };

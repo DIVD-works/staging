@@ -6,6 +6,8 @@
     import PoweredByPurpose from "$lib/assets/powered-by-purpose.png";
     import Banner from "$lib/assets/banner.jpg";
     import { page } from "$app/state";
+
+    import { t } from "$lib/i18n/translations";
 </script>
 
 <Header />
@@ -16,17 +18,11 @@
         background-size: cover; z-index: 1;"
     >
         <article class="article !gap-4 sm:!gap-8 md:!gap-20">
-            <h1 class="!text-3xl sm:!text-5xl h1">Powered by Purpose</h1>
+            <h1 class="!text-3xl sm:!text-5xl h1">
+                {$t("common.home.slogan")}
+            </h1>
             <p class="p !text-white md:!text-xl font-base">
-                The goal of the DIVD.works project is to create a platform that
-                brings together young digital talent and employers. We help you
-                not only further develop your skills, but also find an
-                internship or (part-time) job that suits you. Finding an
-                internship or later a graduation internship turns out to be
-                quite a challenge, causing more and more young people to give
-                up. A shame, isn’t it? We aim to change that! Click the buttons
-                below to get started and find your search for an internship or
-                project.
+                {$t("common.home.banner_description")}
             </p>
             <div
                 class="w-full flex flex-col sm:flex-row text-white gap-5 md:gap-10 text-xl sm:text-2xl
@@ -38,14 +34,14 @@
                     items-center"
                     target="_blank"
                 >
-                    {"Apply now!".toUpperCase()}
+                    {$t("common.home.apply").toUpperCase()}
                 </a>
                 <button
                     class="w-full h-16 rounded-2xl border-1 cursor-pointer hover:bg-gray-800 duration-200
                     ease-out hover:ease-in"
                     on:click={(): Promise<void> => goto("/internships")}
                 >
-                    {"Internships".toUpperCase()}
+                    {$t("common.home.internships").toUpperCase()}
                 </button>
             </div>
         </article>

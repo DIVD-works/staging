@@ -76,9 +76,11 @@ const technology_icons: TechnologyIcons<string>[] = [
   },
 ];
 
-export const load = () => {
+export const load = ({ data }: unknown) => {
   return {
     homecards: home_cards,
     technologyicons: technology_icons,
+    title: data.title,
+    description: data.description,
   };
 };

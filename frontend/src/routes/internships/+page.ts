@@ -21,8 +21,10 @@ const internship_cards: Cards<string>[] = [
   },
 ];
 
-export const load = () => {
+export const load = ({ data }: unknown) => {
   return {
     internshipcards: internship_cards,
+    title: data.title,
+    description: data.description,
   };
 };

@@ -33,8 +33,10 @@ const projects: Projects<string>[] = [
   },
 ];
 
-export const load = () => {
+export const load = ({ data }: unknown) => {
   return {
     projects: projects,
+    title: data.title,
+    description: data.description,
   };
 };

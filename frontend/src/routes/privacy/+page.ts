@@ -169,8 +169,10 @@ const privacy: Privacy<string>[] = [
   },
 ];
 
-export const load = () => {
+export const load = ({ data }: unknown) => {
   return {
     privacy: privacy,
+    title: data.title,
+    description: data.description,
   };
 };

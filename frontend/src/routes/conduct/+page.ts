@@ -38,8 +38,10 @@ const conduct: Conduct<string>[] = [
   },
 ];
 
-export const load = () => {
+export const load = ({ data }: unknown) => {
   return {
     conduct: conduct,
+    title: data.title,
+    description: data.description,
   };
 };

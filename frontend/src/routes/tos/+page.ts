@@ -94,8 +94,10 @@ const tos: TOS<string>[] = [
   },
 ];
 
-export const load = () => {
+export const load = ({ data }: unknown) => {
   return {
     tos: tos,
+    title: data.title,
+    description: data.description,
   };
 };

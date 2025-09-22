@@ -44,8 +44,10 @@ const faq: FAQ<string>[] = [
   },
 ];
 
-export const load = () => {
+export const load = ({ data }: unknown) => {
   return {
     faq: faq,
+    title: data.title,
+    description: data.description,
   };
 };
