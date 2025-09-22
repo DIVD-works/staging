@@ -161,7 +161,7 @@
             </div>
         </article>
     </section>
-    <section class="section !p-0 !pt-5 lg:!pt10 bgdefault">
+    <section class="section !py-0 !pt-5 lg:!pt10 bgdefault">
         <article class="article">
             <h2 class="!text-black dark:!text-white h2">
                 Looking for opportunities?

@@ -9,7 +9,7 @@
 
 <footer class="section bgdefault">
     <article
-        class="article !grid !grid-cols-12 !items-start lg:gap-8 border-t
+        class="article !grid !grid-cols-12 !items-start !gap-0 lg:!gap-8 border-t
         border-purple-500 text-black dark:text-white"
     >
         <div class="col-span-12 lg:col-span-6">

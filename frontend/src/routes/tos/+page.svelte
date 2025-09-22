@@ -15,7 +15,7 @@
             </p>
         </article>
     </section>
-    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+    <section class="section !py-0 !pt-5 lg:!pt-10 bgdefault">
         <article class="article">
             <h2 class="h2 text-center">Conditions</h2>
             <div class="w-full flex flex-col gap-6">

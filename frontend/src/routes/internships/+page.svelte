@@ -40,7 +40,7 @@
             </div>
         </article>
     </section>
-    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+    <section class="section !py-0 !pt-5 lg:!pt-10 bgdefault">
         <article class="article !items-start">
             <h2 class="h2">Benefits of joining</h2>
             <ol class="p list-decimal pl-4">

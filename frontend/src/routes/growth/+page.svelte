@@ -46,7 +46,7 @@
             </p>
         </article>
     </section>
-    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+    <section class="section !py-0 !pt-5 lg:!pt-10 bgdefault">
         <article class="article lg:!flex-row">
             <div class="image-effect">
                 <img src={Investors} alt="Investors" fetchpriority="high" />

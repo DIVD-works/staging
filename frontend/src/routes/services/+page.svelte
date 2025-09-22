@@ -7,7 +7,7 @@
 
 <Header />
 <main>
-    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+    <section class="section !py-0 !pt-5 lg:!pt-10 bgdefault">
         <article class="article">
             <h1 class="h1">Services</h1>
             <div class="card my-4">

@@ -9,7 +9,7 @@
 
 <Header />
 <main>
-    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+    <section class="section !py-0 !pt-5 lg:!pt-10 bgdefault">
         <article class="article !items-start md:!items-center">
             <h1 class="h1">FAQ</h1>
             <p class="p my-3 text-left md:text-center">
