@@ -2,42 +2,29 @@
     import { goto } from "$app/navigation";
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
+
     import Workmethods from "$lib/assets/workmethods/workmethods.jpg";
-    import ConnectingAmbition from "$lib/assets/workmethods/connecting-ambition.webp";
+    import Ambition from "$lib/assets/workmethods/ambition.webp";
     import WhatCanYouDo from "$lib/assets/workmethods/what-can-you-do.png";
     import JoinUs from "$lib/assets/workmethods/join-us.png";
 </script>
 
 <Header />
 <main>
-    <!-- Workmethods section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-white dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
-        >
-            <div
-                class="w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out
-                hover:ease-in"
-            >
+    <section class="section bgdefault">
+        <article class="article lg:!flex-row">
+            <div class="image-effect">
                 <img src={Workmethods} alt="Workmethods" fetchpriority="high" />
             </div>
             <div class="w-full flex flex-col items-start">
-                <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
-                    Work methods
-                </h1>
-                <p
-                    class="text-gray-700 dark:text-gray-300 mt-8 mb-4 text-base sm:text-lg"
-                >
+                <h1 class="h1">Work methods</h1>
+                <p class="p mt-8 mb-4">
                     Many young people today face the significant challenge of
                     finding internships or getting accepted into programs that
                     align with their career goals. This makes it harder for them
                     to gain the experience they need to succeed professionally.
                 </p>
-                <p
-                    class="text-gray-700 dark:text-gray-300 text-base sm:text-lg"
-                >
+                <p class="p">
                     The DIVD.works was created to solve this problem. It
                     provides a platform where students can find numerous
                     opportunities to complete internships, work on projects, and
@@ -46,17 +33,10 @@
             </div>
         </article>
     </section>
-    <!-- Bridging the Gap section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-slate-50 dark:bg-slate-950"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
-        >
-            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
-                Bridging the Gap
-            </h2>
-            <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
+    <section class="section bgcolor">
+        <article class="article !items-start">
+            <h2 class="h2">Bridging the Gap</h2>
+            <p class="p">
                 Isn't it a shame that it's so hard for students to find an
                 internship? Despite their motivation, creativity, and fresh
                 perspectives, countless students struggle to secure a place
@@ -65,85 +45,51 @@
                 companies miss out on young talent eager to contribute and
                 learn.
             </p>
-            <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
+            <p class="p">
                 What if we could change that? Imagine a platform that bridges
                 the gap between ambitious students and forward-thinking
                 companies, offering opportunities that benefit both sides. A
                 place where students can showcase their potential, and companies
                 can discover motivated individuals ready to make a difference.
             </p>
-            <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
+            <p class="p">
                 Let’s create that connection. Let’s make internships accessible,
                 rewarding, and impactful—for students and businesses alike.
             </p>
         </article>
     </section>
-    <!-- Connecting Ambition section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-white dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
-        >
+    <section class="section bgdefault">
+        <article class="article lg:!flex-row">
             <div class="w-full flex flex-col items-start">
-                <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
-                    Connecting Ambition
-                </h2>
-                <p
-                    class="text-gray-700 dark:text-gray-300 text-base sm:text-lg pt-8"
-                >
+                <h2 class="h2">Connecting Ambition</h2>
+                <p class="p pt-8">
                     We aim to bridge the gap between companies and students by
                     creating a transparent, efficient platform. Currently, the
                     internship process is unclear and overwhelming, making it
                     difficult for students to find the right match.
                 </p>
-                <p
-                    class="text-gray-700 dark:text-gray-300 text-base sm:text-lg py-8"
-                >
+                <p class="p py-8">
                     Our solution is to enable clear filtering based on skills,
                     interests, and requirements, allowing both students and
                     companies to connect more effectively. This way, companies
                     gain access to motivated talent, and students find
                     internships that truly fit their abilities and ambitions.
                 </p>
-                <p
-                    class="text-gray-700 dark:text-gray-300 text-base sm:text-lg"
-                >
+                <p class="p">
                     By fostering direct communication and clarity, we make
                     internships fair and accessible for everyone.
                 </p>
             </div>
-            <div
-                class="w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out
-                hover:ease-in"
-            >
-                <img
-                    src={ConnectingAmbition}
-                    alt="Connecting Ambition"
-                    fetchpriority="high"
-                />
+            <div class="image-effect">
+                <img src={Ambition} alt="Ambition" fetchpriority="high" />
             </div>
         </article>
     </section>
-    <!-- What we offer -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-slate-50 dark:bg-slate-950"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
-        >
-            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
-                What we offer
-            </h2>
-            <ol
-                class="text-gray-700 dark:text-gray-300 text-base sm:text-lg pl-4"
-                style="list-style-type:square"
-            >
-                <p
-                    class="text-gray-700 dark:text-gray-300 text-base sm:text-lg mb-4"
-                >
-                    At DIVD Works, you can:
-                </p>
+    <section class="section bgcolor">
+        <article class="article !items-start">
+            <h2 class="h2">What we offer</h2>
+            <ol class="p pl-4" style="list-style-type:square">
+                <p class="p mb-4">At DIVD Works, you can:</p>
                 <li>
                     Develop your own projects: If you have an idea or passion,
                     you can start working on it here. It’s similar to creating a
@@ -162,24 +108,12 @@
             </ol>
         </article>
     </section>
-    <!-- What can you do? section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-white dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
-        >
+    <section class="section bgdefault">
+        <article class="article lg:!flex-row">
             <div class="w-full flex flex-col items-start">
-                <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
-                    What can you do?
-                </h2>
-                <ol
-                    class="text-gray-700 dark:text-gray-300 text-base sm:text-lg pl-4 mt-8"
-                    style="list-style-type:square"
-                >
-                    <p
-                        class="text-gray-700 dark:text-gray-300 text-base sm:text-lg mb-4"
-                    >
+                <h2 class="h2">What can you do?</h2>
+                <ol class="p pl-4 mt-8" style="list-style-type:square">
+                    <p class="p mb-4">
                         There are several ways you can engage with DIVD Works:
                     </p>
                     <li>
@@ -205,31 +139,15 @@
                     </li>
                 </ol>
             </div>
-            <div
-                class="w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out
-                hover:ease-in"
-            >
-                <img
-                    src={WhatCanYouDo}
-                    alt="What can you do"
-                    fetchpriority="high"
-                />
+            <div class="image-effect">
+                <img src={WhatCanYouDo} alt="What can you do" />
             </div>
         </article>
     </section>
-    <!-- Why we stand out section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-slate-50 dark:bg-slate-950"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
-        >
-            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
-                Why we stand out
-            </h2>
-            <p
-                class="text-gray-700 dark:text-gray-300 text-base sm:text-lg mb-4"
-            >
+    <section class="section bgcolor">
+        <article class="article !items-start">
+            <h2 class="h2">Why we stand out</h2>
+            <p class="p mb-4">
                 DIVD Works offers the highest number of internships in the
                 Netherlands, making it one of the top platforms for students
                 seeking real-world experience. Currently based in the
@@ -239,33 +157,14 @@
             </p>
         </article>
     </section>
-    <!-- Join us section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
-        >
-            <div
-                class="w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out
-                hover:ease-in"
-            >
-                <img
-                    src={JoinUs}
-                    alt="Join us"
-                    class="hue-rotate-230"
-                    fetchpriority="high"
-                />
+    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+        <article class="article lg:!flex-row">
+            <div class="image-effect">
+                <img src={JoinUs} alt="Join us" class="hue-rotate-230" />
             </div>
             <div class="w-full flex flex-col items-start">
-                <h2
-                    class="text-black dark:text-white text-4xl md:text-5xl font-semibold"
-                >
-                    Join us
-                </h2>
-                <p
-                    class="text-gray-700 dark:text-gray-300 mt-8 mb-4 text-base sm:text-lg"
-                >
+                <h2 class="!text-black dark:!text-white h2">Join us</h2>
+                <p class="p mt-8 mb-4">
                     If you’re looking to gain experience, develop your ideas,
                     and take the next step in your professional journey, DIVD
                     Works is the place to be. With a variety of opportunities
@@ -273,9 +172,8 @@
                     excellent stepping stone for your future career.
                 </p>
                 <button
-                    class="bg-purple-600 w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-black dark:text-white
-                    text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
-                    hover:ease-in"
+                    class="bg-purple-600 !text-black dark:!text-white
+                    hover:!bg-purple-700 ctabutton block"
                     on:click={(): Promise<void> => goto("/workmethods")}
                 >
                     {"Register now!".toUpperCase()}

@@ -1,28 +1,17 @@
 <script lang="ts">
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
-
-    import Sustainability from "$lib/assets/growth/sustainability.jpg";
+    import Growth from "$lib/assets/growth/growth.jpg";
     import Investors from "$lib/assets/growth/investors.jpg";
 </script>
 
 <Header />
 <main>
-    <!-- Growth section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-white
-        dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
-        >
+    <section class="section bgdefault">
+        <article class="article lg:!flex-row">
             <div class="w-full flex flex-col items-start">
-                <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
-                    Growth
-                </h1>
-                <p
-                    class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg"
-                >
+                <h1 class="h1">Growth</h1>
+                <p class="p mt-8">
                     At DIVD.works, we’re dedicated to shaping the future by
                     empowering individuals to build meaningful careers, pursue
                     lifelong learning, and contribute to a sustainable and
@@ -34,32 +23,15 @@
                     purpose.
                 </p>
             </div>
-            <div
-                class="w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out
-                hover:ease-in"
-            >
-                <img
-                    src={Sustainability}
-                    alt="Sustainability"
-                    fetchpriority="high"
-                />
+            <div class="image-effect">
+                <img src={Growth} alt="Growth" fetchpriority="high" />
             </div>
         </article>
     </section>
-    <!-- Sustainability section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-slate-50
-        dark:bg-slate-950"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col"
-        >
-            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
-                Sustainability
-            </h2>
-            <p
-                class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg"
-            >
+    <section class="section bgcolor">
+        <article class="article !items-start !gap-0">
+            <h2 class="h2">Sustainability</h2>
+            <p class="p mt-8">
                 At DIVD.works, we are dedicated to empowering individuals with
                 purposeful careers that make a positive impact on society and
                 the environment. Beginning in 2025, we began creating pathways
@@ -74,27 +46,14 @@
             </p>
         </article>
     </section>
-    <!-- Investors section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white
-        dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
-        >
-            <div
-                class="w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out
-                hover:ease-in"
-            >
+    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+        <article class="article lg:!flex-row">
+            <div class="image-effect">
                 <img src={Investors} alt="Investors" fetchpriority="high" />
             </div>
             <div class="w-full flex flex-col items-start">
-                <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
-                    Investors
-                </h2>
-                <p
-                    class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg"
-                >
+                <h2 class="h2">Investors</h2>
+                <p class="p mt-8">
                     At DIVD.works, we are committed to driving innovation,
                     sustainability, and social impact. Here, we provide insights
                     into our mission, strategies, and opportunities for growth.
@@ -106,5 +65,4 @@
         </article>
     </section>
 </main>
-
 <Footer />

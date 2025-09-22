@@ -15,8 +15,5 @@
     class="hover:bg-purple-600 rounded-full p-1 duration-200 ease-out hover:ease-in cursor-pointer"
     title="Menu Icon - Toggle Navigation"
 >
-    <Icon
-        icon={icon_set}
-        class="w-10 h-10 sm:w-12 sm:h-12 text-black dark:text-white"
-    />
+    <Icon icon={icon_set} class="icon sm:w-12 sm:h-12" />
 </button>

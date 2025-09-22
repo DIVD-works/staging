@@ -8,8 +8,5 @@
     class="hover:bg-purple-600 rounded-full p-1 duration-200 ease-out hover:ease-in cursor-pointer"
     title="User Icon - Login page"
 >
-    <Icon
-        icon="mdi:user"
-        class="w-10 h-10 sm:w-12 sm:h-12 text-black dark:text-white"
-    />
+    <Icon icon="mdi:user" class="icon sm:w-12 sm:h-12" />
 </button>

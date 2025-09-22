@@ -15,3 +15,67 @@ button {
 html {
     @apply scroll-smooth;
 }
+
+.section {
+    @apply w-full flex justify-start md:justify-center px-3 lg:px-0 py-5 lg:py-10;
+}
+
+.bgdefault {
+    @apply bg-white dark:bg-black;
+}
+
+.bgcolor {
+    @apply bg-slate-100 dark:bg-slate-900;
+}
+
+.article {
+    @apply w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8;
+}
+
+.h1 {
+    @apply text-purple-500 text-5xl md:text-6xl font-extrabold;
+}
+
+.h2 {
+    @apply text-purple-500 text-4xl md:text-5xl font-semibold;
+}
+
+.h3 {
+    @apply text-purple-500 text-3xl sm:text-4xl font-medium;
+}
+
+.p {
+    @apply text-gray-700 dark:text-gray-300 text-base sm:text-lg;
+}
+
+.ctabutton {
+    @apply w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-white dark:text-black text-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 duration-200 ease-out hover:ease-in flex justify-center items-center;
+}
+
+.card {
+    @apply w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6;
+}
+
+.card-item {
+    @apply bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center;
+}
+
+.card-icon {
+    @apply text-black dark:text-white scale-100 hover:scale-110 duration-200 ease-out hover:ease-in;
+}
+
+.icon-medium {
+    @apply w-20 sm:w-24 h-20 sm:h-24;
+}
+
+.projects {
+    @apply col-span-12 w-full grid grid-cols-12 gap-4 sm:gap-8 place-items-center border sm:border-black dark:sm:border-white p-0 sm:p-6 rounded-2xl;
+}
+
+.icon {
+    @apply w-10 h-10 text-black dark:text-white;
+}
+
+.image-effect {
+    @apply w-full flex flex-col items-center scale-100 hover:scale-105 duration-200 ease-out hover:ease-in;
+}

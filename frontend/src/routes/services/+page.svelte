@@ -1,65 +1,25 @@
 <script lang="ts">
+    import { page } from "$app/state";
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
     import Icon from "@iconify/svelte";
-    import type { Cards } from "$lib/types";
-
-    const service_cards: Cards<string>[] = [
-        {
-            title: "Cybersecurity",
-            description: "Protects your data, prevents breaches.",
-            icon: "mdi:encryption-check",
-        },
-        {
-            title: "Vanilla Open-Source",
-            description: "Simplifies adoption, boosts collaboration.",
-            icon: "mdi:computer",
-        },
-        {
-            title: "Talent Growth",
-            description: "Expands knowledge, fuels progress.",
-            icon: "mdi:chart-areaspline",
-        },
-    ];
 </script>
 
 <Header />
 <main>
-    <!-- Services section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
-        >
-            <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
-                Services
-            </h1>
-            <div
-                class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 my-4"
-            >
-                {#each service_cards as { title, description, icon }, _}
-                    <article
-                        class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center"
-                    >
+    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+        <article class="article">
+            <h1 class="h1">Services</h1>
+            <div class="card my-4">
+                {#each page.data.service_cards as { title, description, icon }}
+                    <article class="card-item text-center">
                         <div class="w-full flex justify-center">
-                            <Icon
-                                {icon}
-                                class="w-20 sm:w-24 h-20 sm:h-24 text-black dark:text-white scale-100
-                                hover:scale-110 duration-200 ease-out hover:ease-in"
-                            />
+                            <Icon {icon} class="icon-medium card-icon" />
                         </div>
-
-                        <h2
-                            class="text-purple-500 text-4xl sm:text-3xl font-semibold my-3 text-center"
-                        >
+                        <h2 class="h2 !text-2xl md:!text-3xl my-3">
                             {title}
                         </h2>
-                        <p
-                            class="text-gray-700 dark:text-gray-300 text-base sm:text-lg text-center"
-                        >
-                            {description}
-                        </p>
+                        <p class="p">{description}</p>
                     </article>
                 {/each}
             </div>

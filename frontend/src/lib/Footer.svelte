@@ -7,16 +7,14 @@
             : new Date().getFullYear();
 </script>
 
-<footer
-    class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-white dark:bg-black"
->
+<footer class="section bgdefault">
     <article
-        class="w-full md:w-4/5 lg:w-7/10 grid grid-cols-12 justify-center items-start lg:gap-8 border-t
+        class="article !grid !grid-cols-12 !items-start lg:gap-8 border-t
         border-purple-500 text-black dark:text-white"
     >
         <div class="col-span-12 lg:col-span-6">
             <h3 class="font-medium text-3xl py-8">About DIVD.works</h3>
-            <p class="text-gray-700 dark:text-gray-300 text-sm italic">
+            <p class="p !text-sm sm:!text-sm italic">
                 We connect young digital talent with employers to support skill
                 development and career-aligned internships or part-time roles.
                 By simplifying the search process, it helps prevent talented
