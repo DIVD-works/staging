@@ -53,7 +53,7 @@
 </script>
 <footer class="bg-zinc-100 dark:bg-zinc-900 text-neutral-600 dark:text-neutral-400 w-full px-3 lg:px-0 py-10 flex 
     justify-center rounded-t-4xl">
-    <section class="lg:w-[1100px] grid grid-cols-12">
+    <section class="lg:w-[1100px] grid grid-cols-12 md:gap-5">
         <article class="w-auto col-span-12">
             <figure class="w-24">
                 <a href="/"><img src={WorksLogo} alt="DIVD.works Logo" /></a>
@@ -70,7 +70,7 @@
                 <a href="/" class="font-semibold">DIVD.works.</a>
             </p>
         </article>
-        <article class="w-auto col-span-12 md:col-span-6 mt-8 md:mt-0">
+        <article class="w-auto col-span-12 md:col-span-6 lg:col-span-3 mt-8 md:mt-0">
             <h3 class="text-3xl font-medium text-black dark:text-white">Links</h3>
             <ul class="list-disc list-inside text-lg/7 font-light my-4">
                 {#each item_links as link}
@@ -84,6 +84,18 @@
                         transition-all" />
                     </a>
                 {/each}
+            </div>
+        </article>
+        <article class="w-auto col-span-12 md:col-span-12 lg:col-span-3 mt-8 md:mt-0">
+            <h3 class="text-3xl font-medium text-black dark:text-white">Explore internship</h3>
+            <div class="w-full my-4 text-lg font-light text-white dark:text-black">
+                <a href="https://form.jotform.com/250672969917070" target="_blank">
+                    <button class="cursor-pointer w-full sm:w-1/2 lg:w-full h-10 flex justify-center items-center rounded-3xl 
+                        bg-black dark:bg-white content-center transition-all hover:bg-zinc-700 dark:hover:bg-zinc-300">
+                        Signup for internship 
+                        <Icon icon="mdi:computer" font-size="28" class="ml-3" />
+                    </button>
+                </a>
             </div>
         </article>
     </section>
