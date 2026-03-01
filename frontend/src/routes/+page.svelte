@@ -1,11 +1,23 @@
 <script>
     import Footer from "$lib/components/Footer.svelte";
+    import Herosection from "$lib/components/Herosection.svelte";
     import Navbar from "$lib/components/Navbar.svelte";
 </script>
 
 <Navbar />
-<main>
-    <h1>Welcome to SvelteKit</h1>
-    <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<main class="bg-zinc-50 dark:bg-zinc-950 text-neutral-600 dark:text-neutral-400">
+    <Herosection />
 </main>
 <Footer />
+
+<style>
+    :global(body) {
+        background-color: oklch(98.5% 0 0);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :global(body) {
+            background-color: oklch(14.1% 0.005 285.823);
+        }
+    }
+</style>
