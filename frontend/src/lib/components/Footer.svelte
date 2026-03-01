@@ -11,7 +11,7 @@
 
     const item_links: FooterLinks[] = [
         {
-            href: "/about",
+            href: "#",
             name: "About DIVD.works",
         },
         {
@@ -19,15 +19,15 @@
             name: "Working at DIVD.works",
         },
         {
-            href: "/privacy",
+            href: "#",
             name: "Privacy Statement",
         },
         {
-            href: "/tos",
+            href: "#",
             name: "Terms & Conditions",
         },
         {
-            href: "/cookies",
+            href: "#",
             name: "Cookies",
         },
     ];
