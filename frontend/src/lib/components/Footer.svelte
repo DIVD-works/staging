@@ -67,7 +67,7 @@
             </p>
             <p class="text-base font-light">
                 Copyright &copy; {copyright_year} 
-                <a href="/" class="font-medium">DIVD.works.</a>
+                <a href="/" class="font-semibold">DIVD.works.</a>
             </p>
         </article>
         <article class="w-auto col-span-12 md:col-span-6 mt-8 md:mt-0">
