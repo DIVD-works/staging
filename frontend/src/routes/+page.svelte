@@ -1,4 +1,5 @@
 <script>
+    import Community from "$lib/components/Community.svelte";
     import Footer from "$lib/components/Footer.svelte";
     import Herosection from "$lib/components/Herosection.svelte";
     import Navbar from "$lib/components/Navbar.svelte";
@@ -7,6 +8,7 @@
 <Navbar />
 <main class="bg-zinc-50 dark:bg-zinc-950 text-neutral-600 dark:text-neutral-400">
     <Herosection />
+    <Community />
 </main>
 <Footer />
 

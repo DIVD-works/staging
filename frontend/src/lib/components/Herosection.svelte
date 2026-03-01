@@ -1,6 +1,7 @@
 <script>
     import Icon from "@iconify/svelte";
 </script>
+
 <section class="w-full px-3 lg:px-0 py-10 flex justify-center md:h-dvh">
     <article class="lg:w-[1100px] pt-12 md:pt-20">
         <h1 class="text-5xl/14 md:text-6xl/18 font-bold text-black dark:text-white">
