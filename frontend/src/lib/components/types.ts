@@ -4,7 +4,13 @@ export type FooterLinks = {
 };
 
 export type Card = {
-    title: string;
-    description: string;
-    icon: string;
+    title: string,
+    description: string,
+    icon: string,
+};
+
+export type Team = {
+    source: string,
+    title: string,
+    description: string,
 };

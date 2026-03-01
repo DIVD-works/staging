@@ -9,7 +9,7 @@
             name: "Home",
         },
         {
-            href: "#",
+            href: "/about",
             name: "About",
         },
         {

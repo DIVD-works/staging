@@ -11,7 +11,7 @@
 
     const item_links: FooterLinks[] = [
         {
-            href: "#",
+            href: "/about",
             name: "About DIVD.works",
         },
         {
