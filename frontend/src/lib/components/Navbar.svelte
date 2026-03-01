@@ -1,6 +1,7 @@
 <script lang="ts">
     import WorksLogo from "../assets/favicon.png";
     import type { FooterLinks } from "./types";
+    import { fade } from "svelte/transition";
 
     const nav_links: FooterLinks[] = [
         {
@@ -43,7 +44,8 @@
             {#if menu_state}
                 <header class="w-full h-24 flex justify-center fixed inset-0">
                     <nav class="bg-white dark:bg-black text-neutral-600 dark:text-neutral-400 w-full rounded-4xl m-3 grid 
-                        grid-cols-12 items-start justify-between px-6 shadow-md h-[calc(100dvh-24px)]">
+                        grid-cols-12 items-start justify-between px-6 shadow-md h-[calc(100dvh-24px)]" 
+                        transition:fade={{ duration: 300 }}>
                         <article class="w-auto col-span-6">
                             <figure class="w-18">
                                 <a href="/" data-sveltekit-reload><img src={WorksLogo} alt="DIVD.works Logo"/></a>
