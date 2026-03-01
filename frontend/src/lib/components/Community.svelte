@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Icon from "@iconify/svelte";
 </script>
 
@@ -14,8 +14,8 @@
         </p>
         <div class="grid grid-cols-12 w-full gap-5 font-medium text-lg">
             <a href="https://discord.com/invite/uRTHZm9GgT" target="_blank" class="col-span-12 sm:col-span-6 w-auto h-10 
-                rounded-3xl bg-zinc-900 dark:bg-zinc-100 content-center transition-all hover:bg-zinc-700 
-                dark:hover:bg-zinc-300 text-white dark:text-black">
+                rounded-3xl bg-yellow-500 content-center transition-all hover:bg-yellow-400 dark:hover:bg-yellow-600 
+                text-white">
                 <button class="cursor-pointer w-full flex justify-center items-center">
                     Join our Discord Server 
                     <Icon icon="tabler:brand-discord-filled" font-size="28" class="ml-3" />
