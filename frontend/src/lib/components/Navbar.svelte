@@ -30,7 +30,7 @@
     const toggle_menu: () => boolean = (): boolean => menu_state = !menu_state;
 </script>
 
-<header class="w-full h-24 flex justify-center fixed">
+<header class="w-full h-24 flex justify-center fixed z-10">
     <nav class="bg-zinc-100 dark:bg-zinc-900 text-neutral-600 dark:text-neutral-400 w-full rounded-4xl m-3 flex items-center 
         justify-between px-6 shadow-md">
         <article class="w-auto">
