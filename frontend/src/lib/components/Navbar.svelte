@@ -14,15 +14,15 @@
         },
         {
             href: "#",
-            name: "Services",
-        },
-        {
-            href: "#",
             name: "Workings",
         },
         {
+            href: "/careers",
+            name: "Careers",
+        },
+        {
             href: "#",
-            name: "Register",
+            name: "Services",
         },
     ];
 
