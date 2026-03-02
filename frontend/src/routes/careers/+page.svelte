@@ -30,7 +30,7 @@
     <section class="w-full px-3 lg:px-0 py-10 flex justify-center">
         <article class="lg:w-[1100px] pt-12 md:pt-20">
             <h1 class="text-5xl/14 md:text-6xl/18 font-bold text-yellow-500">Careers</h1>
-            <p class="text-lg/8 font-light my-6 md:my-10 w-full">
+            <p class="text-lg/8 font-light mt-6 md:mt-10 w-full">
                 At DIVD.works, we are committed to nurturing the next generation professionals through our comprehensive 
                 Internship Program. This initiative is designed to equip participants with essential skills, practical 
                 experience, and a global network, paving the way for a successful career in the digital world.
