@@ -23,7 +23,7 @@
             name: "Privacy Statement",
         },
         {
-            href: "#",
+            href: "/tos",
             name: "Terms & Conditions",
         },
         {

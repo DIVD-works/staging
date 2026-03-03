@@ -19,3 +19,7 @@ export type LegalInfo = {
     title: string,
     description: string,
 };
+
+export type LegalBindInfo = {
+    tags?: string[]
+} & LegalInfo;
