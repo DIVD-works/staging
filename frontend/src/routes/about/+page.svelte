@@ -8,6 +8,7 @@
     import Ahmed from "$lib/assets/team/ahmed.jpg";
     import Marcel from "$lib/assets/team/marcel.jpg";
     import Michel from "$lib/assets/team/michel.jpg";
+    import Roger from "$lib/assets/team/roger.jpg";
 
     const team: Team[] = [
         {
@@ -45,6 +46,16 @@
             title: "Michel Verhagen",
             description: "Chief Public Private Partnerships",
         },
+        {
+            source: Roger,
+            title: "Roger",
+            description: "Helper",
+        },
+        {
+            source: Default,
+            title: "Anoniem",
+            description: "Helper",
+        },
     ];
 
     const draggable: boolean = false;
@@ -71,7 +82,7 @@
                         </figure>
                         <h2 class="text-4xl font-semibold text-black dark:text-white">{team.title}</h2>
                         <p class="text-lg/8 font-light my-3 md:my-5 w-full">{team.description}</p>
-                        <li class="bg-black dark:bg-white h-[1px] w-50 list-inside pl-4"></li>
+                        <li class="bg-black dark:bg-white h-px w-50 list-inside pl-4"></li>
                     </article>
                 {/each}
             </div>
