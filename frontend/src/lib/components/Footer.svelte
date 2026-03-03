@@ -19,7 +19,7 @@
             name: "Working at DIVD.works",
         },
         {
-            href: "#",
+            href: "/privacy",
             name: "Privacy Statement",
         },
         {
