@@ -48,8 +48,8 @@
         },
         {
             source: Roger,
-            title: "Roger",
-            description: "Helper",
+            title: "Roger van der Zalm",
+            description: "Customer Support Manager",
         },
         {
             source: Default,
