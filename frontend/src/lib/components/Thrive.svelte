@@ -52,7 +52,7 @@
                 <article class="col-span-12 sm:col-span-6 md:col-span-4 rounded-2xl bg-purple-200 dark:bg-purple-800 flex 
                     flex-col items-center px-4 py-8 transition-all scale-100 hover:scale-105">
                     <h3 class="text-3xl font-medium text-black dark:text-white">{card.title}</h3>
-                    <p class="my-4">{card.description}</p>
+                    <p class="text-lg/8 font-light my-4 w-full">{card.description}</p>
                     <Icon icon={card.icon} font-size="56" class="text-black dark:text-white" />
                 </article>
             {/each}

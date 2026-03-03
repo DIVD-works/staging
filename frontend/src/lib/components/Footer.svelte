@@ -27,8 +27,8 @@
             name: "Terms & Conditions",
         },
         {
-            href: "#",
-            name: "Cookies",
+            href: "/conduct",
+            name: "Code of Conduct",
         },
     ];
 

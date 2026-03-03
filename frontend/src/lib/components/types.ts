@@ -14,3 +14,8 @@ export type Team = {
     title: string,
     description: string,
 };
+
+export type LegalInfo = {
+    title: string,
+    description: string,
+};

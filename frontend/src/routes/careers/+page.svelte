@@ -53,7 +53,7 @@
                             <Icon icon={card.icon} font-size="56" class="text-black dark:text-white" />
                         </div>
                         <h3 class="text-3xl font-medium text-yellow-500 my-4">{card.title}</h3>
-                        <p>{card.description}</p>
+                        <p class="text-lg/8 font-light w-full">{card.description}</p>
                     </article>
                 {/each}
             </div>
