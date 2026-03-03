@@ -160,13 +160,7 @@
     </section>
     <section class="bg-zinc-100 dark:bg-zinc-900 w-full px-3 lg:px-0 py-10 flex justify-center rounded-l-4xl">
         <article class="lg:w-[1100px]">
-            <h2 class="text-4xl md:text-5xl font-semibold text-black dark:text-white">Conditions</h2>
-            <p class="text-lg/8 font-light my-6 md:my-10 w-full">
-                DIVD.works provides benefits for both students, companies and those who are looking for a (parttime) job.
-                The "working in the open principle" allows us to be transparant and we're one of the first who bridge the gap
-                between students looking for an internship and companies who are offering jobs on the platform. Read all the
-                benefits below.
-            </p>
+            <h2 class="text-4xl md:text-5xl font-semibold text-black dark:text-white mb-6 md:mb-10">Conditions</h2>
             <div class="w-full flex flex-col gap-5 font-medium text-lg">
                 {#each legalbind_info as privacy, index}
                     <h3 class="text-3xl font-medium text-black dark:text-white">
