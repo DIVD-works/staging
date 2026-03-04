@@ -2,19 +2,25 @@
     import type { Team } from "$lib/components/types";
 
     import Victor from "$lib/assets/team/victor.jpg";
+    import Akiko from "$lib/assets/team/akiko.jpg"; 
     import Default from "$lib/assets/team/default.jpg";
     import Loek from "$lib/assets/team/loek.jpeg";
     import Nigel from "$lib/assets/team/nigel.png";
     import Ahmed from "$lib/assets/team/ahmed.jpg";
-    import Marcel from "$lib/assets/team/marcel.jpg";
     import Michel from "$lib/assets/team/michel.jpg";
     import Roger from "$lib/assets/team/roger.jpg";
+    import Tabitha from "$lib/assets/team/tabitha.jpg";
 
     const team: Team[] = [
         {
             source: Victor,
             title: "Victor Gevers",
             description: "CEO",
+        },
+        {
+            source: Akiko,
+            title: "Akiko Takashima",
+            description: "Executive Assistant",
         },
         {
             source: Default,
@@ -29,17 +35,17 @@
         {
             source: Nigel,
             title: "Nigel van Maanen",
-            description: "Chief Creative Officer (CCO)",
+            description: "Chief Creative Officer",
         },
         {
             source: Ahmed,
             title: "Ahmed Ezzammouri",
-            description: "CISO",
+            description: "Chief Information Security Officer",
         },
         {
-            source: Marcel,
-            title: "Marcel van der Kuil",
-            description: "COO",
+            source: Default,
+            title: "Anoniem",
+            description: "Chief Operating Officer",
         },
         {
             source: Michel,
@@ -52,9 +58,9 @@
             description: "Customer Support Manager",
         },
         {
-            source: Default,
-            title: "Anoniem",
-            description: "Helper",
+            source: Tabitha,
+            title: "Tabitha Vogelaar",
+            description: "Security Expert",
         },
     ];
 
@@ -76,7 +82,7 @@
                     <article class="rounded-2xl bg-gray-200 dark:bg-gray-800 flex flex-col items-center px-4 py-8 
                         transition-all scale-100 hover:scale-105 shadow-md">
                         <figure>
-                            <img src={team.source} {draggable} alt={team.title} class="w-44 xl:w-44 mx-auto rounded-full mb-6 
+                            <img src={team.source} {draggable} alt={team.title} class="w-44 h-44 mx-auto rounded-full mb-6 
                                 md:mb-10 border-2" 
                             />
                         </figure>

@@ -23,3 +23,8 @@ export type LegalInfo = {
 export type LegalBindInfo = {
     tags?: string[]
 } & LegalInfo;
+
+export type Projects = {
+    location: string, 
+    image: string,
+} & LegalBindInfo;

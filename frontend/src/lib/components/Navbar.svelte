@@ -14,6 +14,14 @@
         },
         {
             href: "#",
+            name: "faq",
+        },
+        {
+            href: "/projects",
+            name: "Projects",
+        },
+        {
+            href: "#",
             name: "Workings",
         },
         {
