@@ -30,7 +30,7 @@
             {#each nav_links as link}
                 <a href={link.href} data-sveltekit-reload>
                     <div class="hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all rounded-xl 
-                        hover:text-neutral-800 dark:hover:text-neutral-200 my-1 p-1 flex items-center group">
+                        hover:text-neutral-800 dark:hover:text-neutral-200 my-1 px-1 py-2 flex items-center group">
                         {link.name.toUpperCase()}
                         <Icon icon="tabler:circle-arrow-right-filled" font-size="28" class="ml-3 group-hover:ml-5 
                             transition-all" 
