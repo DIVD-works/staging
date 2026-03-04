@@ -73,9 +73,11 @@
                 <a href="https://form.jotform.com/250672969917070" target="_blank" class="col-span-12 sm:col-span-4 
                     lg:col-span-3 w-auto h-10 rounded-3xl bg-yellow-500 content-center transition-all 
                     hover:bg-yellow-400 dark:hover:bg-yellow-600">
-                    <button class="cursor-pointer w-full flex justify-center items-center">
+                    <button class="cursor-pointer w-full flex justify-center items-center group">
                         {"Apply now!".toUpperCase()}
-                        <Icon icon="tabler:circle-arrow-right-filled" font-size="28" class="ml-5" />
+                        <Icon icon="tabler:circle-arrow-right-filled" font-size="28" class="translate-x-3 
+                            group-hover:translate-x-5 transition-all" 
+                        />
                     </button>
                 </a>
             </div>

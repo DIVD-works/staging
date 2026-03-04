@@ -21,16 +21,20 @@
         <div class="grid grid-cols-12 w-full gap-5 text-white font-medium text-lg">
             <a href="/careers" class="col-span-12 sm:col-span-6 md:col-span-5 lg:col-span-4 w-auto h-10 rounded-3xl 
                 bg-yellow-500 content-center transition-all hover:bg-yellow-400 dark:hover:bg-yellow-600">
-                <button class="cursor-pointer w-full flex justify-center items-center">
+                <button class="cursor-pointer w-full flex justify-center items-center group">
                     Platform for students 
-                    <Icon icon="tabler:circle-arrow-right-filled" font-size="28" class="ml-5" />
+                    <Icon icon="tabler:circle-arrow-right-filled" font-size="28" class="translate-x-3 
+                        group-hover:translate-x-5 transition-all" 
+                    />
                 </button>
             </a>
             <a href="/" class="col-span-12 sm:col-span-6 md:col-span-5 lg:col-span-4 w-auto h-10 rounded-3xl bg-purple-500 
                 content-center transition-all hover:bg-purple-400 dark:hover:bg-purple-600">
-                <button class="cursor-pointer w-full flex justify-center items-center">
+                <button class="cursor-pointer w-full flex justify-center items-center group">
                     Platform for companies 
-                    <Icon icon="tabler:circle-arrow-right-filled" font-size="28" class="ml-5" />
+                    <Icon icon="tabler:circle-arrow-right-filled" font-size="28" class="translate-x-3 
+                        group-hover:translate-x-5 transition-all" 
+                    />
                 </button>
             </a>
         </div>
