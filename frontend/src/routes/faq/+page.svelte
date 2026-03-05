@@ -176,7 +176,7 @@
                             {faq_item.description || "No description provided."}
                         </p>
                         {#if (index == 7 || index == 16 || index == 17)}
-                            <ol class="list-[square] list-inside text-lg/7 font-light mt-4">
+                            <ol class="list-[square] list-inside text-base/6 md:text-lg/7 font-light mt-4">
                                 {#each faq_item.tags as tag}
                                     <li class="marker:text-black dark:marker:text-white pb-2">
                                         {tag || "No tag provided."}
