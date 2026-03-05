@@ -43,7 +43,7 @@
         items-center justify-between px-6 shadow-md">
         <article class="w-auto">
             <figure class="w-18">
-                <a href="/"><img src={WorksLogo} alt="DIVD.works Logo" /></a>
+                <a href="/"><img src={WorksLogo} alt="DIVD.works Logo" fetchpriority="high" /></a>
             </figure>
         </article>
         <article class="w-auto text-3xl font-medium text-black dark:text-white hover:text-neutral-700 

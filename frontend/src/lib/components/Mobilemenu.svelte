@@ -16,7 +16,7 @@
         transition:fade={{ duration: 300 }}>
         <article class="w-auto col-span-6">
             <figure class="w-18">
-                <a href="/" data-sveltekit-reload><img src={WorksLogo} alt="DIVD.works Logo"/></a>
+                <a href="/" data-sveltekit-reload><img src={WorksLogo} alt="DIVD.works Logo" fetchpriority="high" /></a>
             </figure>
         </article>
         <article class="w-auto text-black dark:text-white hover:text-neutral-700 

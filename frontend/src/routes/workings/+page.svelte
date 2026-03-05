@@ -125,7 +125,7 @@
     <section class="w-full px-3 lg:px-0 py-10 flex justify-center">
         <article class="lg:w-[1100px]">
             <h2 class="text-4xl md:text-5xl font-semibold text-purple-500">What we offer</h2>
-            <p class="text-lg/8 font-light mt-6 md:mt-10 w-full mb-4">At DIVD Works, you can:</p>
+            <p class="text-lg/8 font-light mt-6 md:mt-10 w-full mb-4">At DIVD.works, you can:</p>
             <ol class="list-[square] list-inside text-lg/7 font-light">
                 <li class="marker:text-purple-500">
                     Develop your own projects: If you have an idea or passion, you can start working on it here. It’s similar 
@@ -136,7 +136,7 @@
                     your interests and work with others.
                 </li>
                 <li class="marker:text-purple-500">
-                    Complete your education: If your primary goal is to finish your studies, DIVD Works allows you to do so 
+                    Complete your education: If your primary goal is to finish your studies, DIVD.works allows you to do so 
                     while gaining real-world experience.
                 </li>
             </ol>
@@ -147,7 +147,7 @@
             <div class="w-full">
                 <h2 class="text-4xl md:text-5xl font-semibold text-purple-500">What can you do?</h2>
                 <p class="text-lg/8 font-light mt-6 md:mt-10 w-full mb-4">
-                    There are several ways you can engage with DIVD Works:
+                    There are several ways you can engage with DIVD.works:
                 </p>
                 <ol class="list-[square] list-inside text-lg/7 font-light">
                     <li class="marker:text-purple-500">
@@ -155,7 +155,7 @@
                         or business. If the project is successful, it could even become monetizable.
                     </li>
                     <li class="marker:text-purple-500 py-2">
-                        Work on client projects: You can also contribute to projects provided by DIVD Works’ clients, allowing 
+                        Work on client projects: You can also contribute to projects provided by DIVD.works’ clients, allowing 
                         you to apply your skills in real-world scenarios.
                     </li>
                     <li class="marker:text-purple-500 pb-2">
@@ -163,7 +163,7 @@
                         lead to further career opportunities.
                     </li>
                     <li class="marker:text-purple-500">
-                        Take courses: During your first few weeks at DIVD Works, you can take courses to help you build the 
+                        Take courses: During your first few weeks at DIVD.works, you can take courses to help you build the 
                         necessary skills for your chosen career path.
                     </li>
                 </ol>
@@ -177,8 +177,8 @@
         <article class="lg:w-[1100px]">
             <h2 class="text-4xl md:text-5xl font-semibold text-purple-500">Why we stand out?</h2>
             <p class="text-lg/8 font-light mt-6 md:mt-10 w-full">
-                DIVD Works offers the highest number of internships in the Netherlands, making it one of the top platforms 
-                for students seeking real-world experience. Currently based in the Netherlands, DIVD Works has the potential 
+                DIVD.works offers the highest number of internships in the Netherlands, making it one of the top platforms 
+                for students seeking real-world experience. Currently based in the Netherlands, DIVD.works has the potential 
                 to expand internationally, but that depends on the support and involvement of students and professionals.
             </p>
         </article>
@@ -188,7 +188,7 @@
             <h2 class="text-4xl md:text-5xl font-semibold text-black dark:text-white">Join us</h2>
             <p class="text-lg/8 font-light my-6 md:my-10 w-full">
                 If you’re looking to gain experience, develop your ideas, and take the next step in your professional 
-                journey, DIVD Works is the place to be. With a variety of opportunities and the possibility of working on 
+                journey, DIVD.works is the place to be. With a variety of opportunities and the possibility of working on 
                 exciting projects, it's an excellent stepping stone for your future career.
             </p>
             <div class="grid grid-cols-12 w-full gap-5 text-white font-medium text-lg">

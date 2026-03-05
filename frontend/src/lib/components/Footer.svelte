@@ -56,7 +56,7 @@
     <section class="lg:w-[1100px] grid grid-cols-12 md:gap-5">
         <article class="w-auto col-span-12">
             <figure class="w-24">
-                <a href="/"><img src={WorksLogo} alt="DIVD.works Logo" /></a>
+                <a href="/"><img src={WorksLogo} alt="DIVD.works Logo" loading="lazy" /></a>
             </figure>
         </article>
         <article class="w-auto col-span-12 md:col-span-6 mr-0 md:mr-8">

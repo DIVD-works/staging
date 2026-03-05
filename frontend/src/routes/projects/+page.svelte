@@ -29,6 +29,8 @@
             description: "Project vlam.ai (Veilige, Lokale AI Modellen – “Safe, Local AI Models”) is a Dutch government initiative by BZK, VRO, and SSC-ICT that delivers secure, locally hosted, and scalable AI solutions for the Dutch government, enabling private AI application deployment, confidential generative AI chat, and efficient AI-powered search across public-sector data.",
         },
     ];
+
+    const draggable: boolean = false;
 </script>
 
 <main class="bg-zinc-50 dark:bg-zinc-950 text-neutral-600 dark:text-neutral-400">
@@ -47,7 +49,7 @@
                         md:p-8 gap-5 md:gap-8">
                         <a href={project.location} target="_blank" class="col-span-12 md:col-span-5 place-items-center
                             transition-all scale-100 hover:scale-105">
-                            <img src={project.image} alt={project.title} fetchpriority="high" />
+                            <img src={project.image} {draggable} alt={project.title} />
                         </a>
                         <div class="col-span-12 md:col-span-7">
                             <h2 class="text-4xl md:text-5xl font-semibold text-yellow-500">{project.title}</h2>
