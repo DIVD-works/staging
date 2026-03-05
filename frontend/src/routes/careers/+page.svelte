@@ -48,7 +48,7 @@
             <div class="grid grid-cols-12 w-full gap-5 font-medium text-lg text-center">
                 {#each internship_card as card}
                     <article class="col-span-12 sm:col-span-6 md:col-span-4 rounded-2xl bg-gray-200 dark:bg-gray-800 flex 
-                        flex-col items-center px-4 py-8 transition-all scale-100 hover:scale-105">
+                        flex-col items-center px-4 py-8 transition-all scale-100 hover:scale-105 shadow-md">
                         <div class="w-full flex justify-center">
                             <Icon icon={card.icon} font-size="56" class="text-black dark:text-white" />
                         </div>

@@ -28,3 +28,5 @@ export type Projects = {
     location: string, 
     image: string,
 } & LegalBindInfo;
+
+export type FAQ = LegalBindInfo;

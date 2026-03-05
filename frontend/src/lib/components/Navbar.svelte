@@ -13,8 +13,8 @@
             name: "About",
         },
         {
-            href: "#",
-            name: "faq",
+            href: "/faq",
+            name: "FAQ",
         },
         {
             href: "/projects",
