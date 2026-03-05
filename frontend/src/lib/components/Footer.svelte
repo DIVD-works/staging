@@ -15,8 +15,8 @@
             name: "About DIVD.works",
         },
         {
-            href: "#",
-            name: "Working at DIVD.works",
+            href: "/workings",
+            name: "How DIVD.works",
         },
         {
             href: "/privacy",
