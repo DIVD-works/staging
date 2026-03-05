@@ -34,7 +34,13 @@
         },
         {
             title: "🤔 Who is DIVD.works for?",
-            description: "We are here for: Students seeking internships or graduation projects, Young professionals looking to develop tech skills, Educational institutions seeking real-world learning opportunities for students, Public and private organizations with digital challenges that serve the public good.",
+            description: "We are here for:",
+            tags: [
+                "Students seeking internships or graduation projects",
+                "Young professionals looking to develop tech skills",
+                "Educational institutions seeking real-world learning opportunities for students",
+                "Public and private organizations with digital challenges that serve the public good",
+            ],
         },
         {
             title: "💰 Is this a paid internship?",
@@ -70,11 +76,22 @@
         },
         {
             title: "🔧 What’s the difference between DIVD.academy and DIVD.works?",
-            description: "DIVD.academy is your learning environment: tutorials, workshops, training and certifications. DIVD.works is your practical playground: projects, internships, challenges, and collaboration.",
+            description: "The difference between those two are the following:",
+            tags: [
+                "DIVD.academy is your learning environment: tutorials, workshops, training and certifications.",
+                "DIVD.works is your practical playground: projects, internships, challenges, and collaboration.",
+            ],
         },
         {
             title: "🧠 What skills can I develop?",
-            description: "Ethical hacking & vulnerability research, Responsible disclosure, Teamwork, leadership & project ownership, Open-source contribution, Communication & documentation skills",
+            description: "The skills you can develop are:",
+            tags: [
+                "Ethical hacking & vulnerability research",
+                "Responsible disclosure",
+                "Teamwork, leadership & project ownership",
+                "Open-source contribution",
+                "Communication & documentation skills",
+            ],
         },
         {
             title: "🌐 Are there certifications or credentials I can earn?",
@@ -158,6 +175,15 @@
                         <p class="text-base/7 md:text-lg/8 font-light w-full">
                             {faq_item.description || "No description provided."}
                         </p>
+                        {#if (index == 7 || index == 16 || index == 17)}
+                            <ol class="list-[square] list-inside text-lg/7 font-light mt-4">
+                                {#each faq_item.tags as tag}
+                                    <li class="marker:text-black dark:marker:text-white pb-2">
+                                        {tag || "No tag provided."}
+                                    </li>
+                                {/each}
+                            </ol>
+                        {/if}
                     {:else}
                         <Icon icon="mdi:arrow-down-drop-circle" font-size="28" class="text-black dark:text-white" />
                     {/if}
