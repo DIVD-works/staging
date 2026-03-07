@@ -1,5 +1,6 @@
 <script lang="ts">
     import Community from "$lib/components/Community.svelte";
+    import Contactform from "$lib/components/Contactform.svelte";
     import type { Card } from "$lib/components/types";
     import Icon from "@iconify/svelte";
 
@@ -84,11 +85,11 @@
     <section class="bg-zinc-100 dark:bg-zinc-900 w-full px-3 lg:px-0 py-10 flex justify-center rounded-l-4xl">
         <article class="lg:w-[1100px]">
             <h2 class="text-4xl md:text-5xl font-semibold text-purple-500">Contact Us</h2>
-            <p class="text-lg/8 font-light mt-3 md:mt-5 w-full">
+            <p class="text-lg/8 font-light my-3 md:my-5 w-full">
                 Please fill out this form to get in touch with us. We will use your information to respond to your inquiry 
                 and keep you informed about relevant content, services, and events.
             </p>
-            <!-- TODO -->
+            <Contactform />
         </article>
     </section>
     <Community />
