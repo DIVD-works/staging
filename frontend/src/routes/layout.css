@@ -7,3 +7,16 @@ h1, h2, h3, h4, h5, h6 {
 p, a, li {
     font-family: "Open Sans", sans-serif;
 }
+
+.label_default {
+    @apply col-span-11 after:content-['_*'] after:text-red-500;
+}
+
+.input_default {
+    @apply border border-black dark:border-white h-12 rounded-md placeholder:text-neutral-700 
+    placeholder:dark:text-neutral-300 text-black dark:text-white px-3 mb-3 caret-red-500;
+}
+
+.form_div {
+    @apply col-span-12 flex flex-col;
+}
