@@ -30,3 +30,10 @@ export type Projects = {
 } & LegalBindInfo;
 
 export type FAQ = LegalBindInfo;
+
+export type UnifiedContactField<T> = {
+    field: T,
+    check: boolean,
+    noerror: boolean,
+    errormessage: string,
+};
