@@ -18,6 +18,7 @@
         phonenumber: field_values<number>(0), 
         yourmessage: field_values<string>(""), 
         agreement: field_values<boolean>(false),
+        honeypot: field_values<string>(""),
     });
 
     const textchars: RegExp = new RegExp("^[\\p{L}\\-\\s]+$", "u");
@@ -47,7 +48,7 @@
         form.emailaddress.errormessage = check_field(form.emailaddress.field, "E-mail Address", emailchars, 6, 250);
         form.phonenumber.errormessage = check_field(form.phonenumber.field.toString(), "Phone Number", phonechars, 10, 10);
         form.yourmessage.errormessage = check_field(form.yourmessage.field, "Your Message", messagechars, 50, 2500);
-        form.agreement.errormessage = (!form.agreement.field) ? "Agreement Box wasn't checked." : "";
+        form.agreement.errormessage = !form.agreement.field ? "Agreement Box wasn't checked." : "";
 
         form.firstname.check = (form.firstname.errormessage == "");
         form.lastname.check = (form.lastname.errormessage == "");
@@ -57,16 +58,44 @@
         form.phonenumber.check = (form.phonenumber.errormessage == "");
         form.yourmessage.check = (form.yourmessage.errormessage == "");
         form.agreement.check = (form.agreement.errormessage == "") && form.firstname.check && form.lastname.check && 
-            form.emailaddress.check && form.yourmessage.check;
+            form.emailaddress.check && form.yourmessage.check && form.honeypot.field == "";
     });
 </script>
 
-<form method="post" action="https://eu-submit.jotform.com/submit/253242909733056" onsubmit={
+<form id="253242909733056" method="post" action="https://eu-submit.jotform.com/submit/253242909733056" onsubmit={
     (event: SubmitEvent): boolean | void => !form.agreement.check && event?.preventDefault()
-}>
+} name="form_253242909733056" accept-charset="utf-8" autocomplete="on" novalidate={true}>
     <fieldset class="border-2 border-purple-500 rounded-2xl grid grid-cols-12 w-full gap-3 font-medium text-base sm:text-lg 
         p-4 sm:p-6">
         <legend class="text-black dark:text-white text-center text-xl sm:text-2xl">Contact information</legend>
+
+        <!-- Start hidden JotForm input validators -->
+        <input type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" name="formID" 
+            value="253242909733056" 
+        />
+        <input id="JWTContainer" type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" value="" />
+        <input id="cardinalOrderNumber" type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" 
+            value="" 
+        />
+        <input id="jsExecutionTracker" type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" 
+            name="jsExecutionTracker" value="build-date-1772990272965" 
+        />
+        <input id="submitSource" type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" 
+            name="submitSource" value="unknown" 
+        />
+        <input id="submitDate" type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" 
+            name="submitDate" value="undefined" 
+        />
+        <input id="buildDate" type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" 
+            name="buildDate" value="1772990272965" 
+        />
+        <input type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" name="uploadServerUrl" 
+            value="https://upload.jotform.com/upload" 
+        />
+        <input type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" name="eventObserver" 
+            value="1" 
+        />
+        <!-- End hidden JotForm input validators -->
 
         <p id="full_name" class="label_default">Full Name: </p>
         <div class="form_div md:col-span-6!">
@@ -158,14 +187,33 @@
             <div class="error_default"><p class="error">{form.agreement.errormessage}</p></div>
         {/if}
 
+        <!-- Start hidden JotForm input validators -->
+        <input id="input_8" type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" 
+            name="q8_q8_widget_TermsAndConditions6" value="" 
+        />
+        <span class="hidden col-span-12">
+            Should be Empty: 
+            <input type="text" class="input_default col-span-12 caret-black! dark:caret-white!" name="website" 
+                bind:value={form.honeypot.field} onblur={(): boolean => form.honeypot.noerror = true} 
+            />
+        </span>
+        <input id="simple_spc" type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" 
+            name="simple_spc" value="253242909733056"
+        />
+        <input id="widget_settings_8" type="hidden" class="input_default col-span-12 caret-black! dark:caret-white!" 
+            data-version="2" 
+            value="%5B%7B%22name%22%3A%22termsText%22%2C%22value%22%3A%22By%20submitting%20this%20form%2C%20you%20agree%20to%20the%20use%20of%20your%20information%20to%20fulfill%20your%20request%20and%20to%20be%20contacted%20about%20other%20relevant%20content%2C%20services%2C%20and%20events.%20For%20more%20information%2C%20please%20see%20our%20Privacy%20Notice.%22%7D%2C%7B%22name%22%3A%22termsLink%22%2C%22value%22%3A%22https%3A%2F%2Fwww.divd.works%2Fabout%2Fprivacy%22%7D%2C%7B%22name%22%3A%22theme%22%2C%22value%22%3A%22default%22%7D%2C%7B%22name%22%3A%22acceptedText%22%2C%22value%22%3A%22Accepted%22%7D%5D" 
+        />
+        <!-- End hidden JotForm input validators -->
+
         {#if form.agreement.check}
             <div class="col-span-12 grid grid-cols-12 w-full gap-5 text-white font-medium text-lg">
                 <button type="submit" class="col-span-12 sm:col-span-5 md:col-span-4 lg:col-span-3 cursor-pointer w-auto flex 
                     justify-center items-center group h-10 rounded-3xl bg-purple-500 content-center transition-all 
                     hover:bg-purple-400 dark:hover:bg-purple-600">
                     {"Submit inquiry!".toUpperCase()}
-                    <Icon icon="tabler:circle-arrow-right-filled" font-size="28" class="translate-x-3 
-                        group-hover:translate-x-5 transition-all" 
+                    <Icon icon="tabler:circle-arrow-right-filled" font-size="28" class="translate-x-3 group-hover:translate-x-5 
+                        transition-all" 
                     />
                 </button>
             </div>
