@@ -1,5 +1,5 @@
 import type { RouteParams } from "$app/types";
-import type { RequestEvent } from "@sveltejs/kit";
+import type { Cookies, RequestEvent } from "@sveltejs/kit";
 
 export const actions: {
     default: ({ cookies }: RequestEvent<RouteParams<"/services">, "/services">) => Promise<{success: boolean}>;
@@ -43,8 +43,13 @@ export const actions: {
 };
 
 export function load({ cookies }): {
-    sessionId: string | undefined;
+    sessionId: string | undefined; 
+    guestId: string | undefined;
+    referer: string | undefined;
 } {
-  const sessionId = cookies.get("g_state");
-  return { sessionId };
+    return {
+        sessionId: cookies.get("g_state"),
+        guestId: cookies.get("guest"),
+        referer: cookies.get("userReferer")
+    };
 }
