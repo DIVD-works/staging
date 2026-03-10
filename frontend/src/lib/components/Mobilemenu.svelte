@@ -2,6 +2,7 @@
     import { fade } from "svelte/transition";
     import type { FooterLinks } from "./types";
     import Icon from "@iconify/svelte";
+    import { page } from "$app/state";
 
     const { WorksLogo, nav_links, toggle_menu }: {
         WorksLogo: string, 
@@ -28,7 +29,7 @@
         </article>
         <article class="col-span-12 my-4">
             {#each nav_links as link}
-                <a href={link.href} data-sveltekit-reload>
+                <a href={link.href} data-sveltekit-reload class:active={page.route.id == link.href}>
                     <div class="hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all rounded-xl 
                         hover:text-neutral-800 dark:hover:text-neutral-200 my-1 px-1 py-2 flex items-center group">
                         {link.name.toUpperCase()}
@@ -41,3 +42,16 @@
         </article>
     </nav>
 </header>
+
+<style>
+    .active {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .active {
+            color: #FFFFFF;
+        }
+    }
+</style>

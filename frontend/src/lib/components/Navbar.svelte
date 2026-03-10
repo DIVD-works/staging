@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { page } from "$app/state";
     import WorksLogo from "../assets/favicon.png";
     import Mobilemenu from "./Mobilemenu.svelte";
     import type { FooterLinks } from "./types";
@@ -55,8 +56,24 @@
         </article>
         <article class="w-auto hidden md:block">
             {#each nav_links as link}
-                <a href={link.href} class="hover:text-neutral-800 dark:hover:text-neutral-200 ml-8">{link.name}</a>
+                <a href={link.href} class="hover:text-neutral-800 dark:hover:text-neutral-200 ml-8" 
+                    class:active={page.route.id == link.href}>
+                    {link.name}
+                </a>
             {/each}
         </article>
     </nav>
 </header>
+
+<style>
+    .active {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .active {
+            color: #FFFFFF;
+        }
+    }
+</style>
