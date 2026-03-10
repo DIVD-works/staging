@@ -77,6 +77,12 @@
     ];
 </script>
 
+<svelte:head>
+	<title>TOS | DIVD.works</title>
+    <meta name="description" content="DIVD.works is the bridge connector and a platform between students and companies. Explore your future internship and discover motivated talent today!" />
+    <meta name="keywords" content="DIVD.works, platform, internship, talent" />
+</svelte:head>
+
 <main class="bg-zinc-50 dark:bg-zinc-950 text-neutral-600 dark:text-neutral-400">
     <section class="w-full px-3 lg:px-0 py-10 flex justify-center">
         <article class="lg:w-[1100px] pt-12 md:pt-20">

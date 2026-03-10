@@ -11,7 +11,6 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>Home - DIVD.works</title>
 </svelte:head>
 
 <Navbar />
