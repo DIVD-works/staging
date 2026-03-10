@@ -36,18 +36,22 @@
         {
             href: "https://github.com/divd-works",
             name: "octicon:mark-github-24",
+            label: "Github",
         },
         {
             href: "https://www.youtube.com/@DIVD-works",
             name: "tabler:brand-youtube-filled",
+            label: "Youtube",
         },
         {
             href: "https://discord.com/invite/uRTHZm9GgT",
             name: "tabler:brand-discord-filled",
+            label: "Discord",
         },
         {
             href: "#",
             name: "mdi:email-fast",
+            label: "Email",
         },
     ];
 </script>
@@ -79,7 +83,7 @@
             </ul>
             <div class="w-full flex gap-3">
                 {#each media_links as media}
-                    <a href={media.href} target="_blank">
+                    <a href={media.href} target="_blank" aria-label={media.label}>
                         <Icon icon={media.name} font-size="28" class="hover:text-neutral-800 dark:hover:text-neutral-200 
                         transition-all" />
                     </a>

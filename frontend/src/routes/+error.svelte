@@ -1,7 +1,17 @@
 <script lang="ts">
     import WorksLogo from "../lib/assets/favicon.png";
     import { page } from "$app/state";
+    import { onMount } from "svelte";
+
+    onMount((): unknown => console.error = (..._: unknown[]): void => {});
 </script>
+
+<svelte:head>
+	<title>404 Error | DIVD.works</title>
+    <meta name="description" content="DIVD.works is the bridge connector and a platform between students and companies. Explore your future internship and discover motivated talent today!" />
+    <meta name="keywords" content="DIVD.works, platform, internship, talent" />
+    <meta name=”robots” content="noindex, nofollow" />
+</svelte:head>
 
 <main class="bg-zinc-50 dark:bg-zinc-950 text-neutral-600 dark:text-neutral-400">
     <section class="w-full px-3 lg:px-0 py-10 flex justify-center">

@@ -38,7 +38,7 @@
 
 <section class="bg-zinc-100 dark:bg-zinc-900 w-full px-3 lg:px-0 py-10 flex justify-center rounded-l-4xl">
     <article class="lg:w-[1100px]">
-        <h2 class="text-4xl md:text-5xl font-semibold text-black dark:text-white">
+        <h2 class="text-4xl md:text-5xl font-semibold text-purple-500">
             Thrive with us
         </h2>
         <p class="text-lg/8 font-light my-6 md:my-10 w-full">
@@ -49,9 +49,9 @@
         </p>
         <div class="grid grid-cols-12 w-full gap-5 font-medium text-lg text-center">
             {#each card as card}
-                <article class="col-span-12 sm:col-span-6 md:col-span-4 rounded-2xl bg-purple-200 dark:bg-purple-800 flex 
+                <article class="col-span-12 sm:col-span-6 md:col-span-4 rounded-2xl bg-gray-200 dark:bg-gray-800 flex 
                     flex-col items-center px-4 py-8 transition-all scale-100 hover:scale-105">
-                    <h3 class="text-3xl font-medium text-black dark:text-white">{card.title}</h3>
+                    <h3 class="text-3xl font-medium text-purple-500">{card.title}</h3>
                     <p class="text-lg/8 font-light my-4 w-full">{card.description}</p>
                     <Icon icon={card.icon} font-size="56" class="text-black dark:text-white" />
                 </article>

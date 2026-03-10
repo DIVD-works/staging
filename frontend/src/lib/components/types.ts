@@ -1,6 +1,7 @@
 export type FooterLinks = {
     href: string,
     name: string,
+    label?: string,
 };
 
 export type Card = {
